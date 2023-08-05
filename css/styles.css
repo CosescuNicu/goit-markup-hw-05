@@ -494,8 +494,11 @@ a:hover {
   border-radius: 50%;
 }
 .elipse:hover,
-.elipse:focus {
+.icon-member:hover,
+.elipse:focus,
+.icon-member:focus {
   background-color: #2196f3;
+  fill: #ffffff;
 }
 .icon-member {
   display: flex;
@@ -504,10 +507,6 @@ a:hover {
   height: 20px;
   flex-shrink: 0;
   fill: #757575;
-}
-
-.icon-member:hover {
-  fill: #ffffff;
 }
 
 .regular-clients {
@@ -553,10 +552,14 @@ a:hover {
   width: 106px;
   height: 60px;
   flex-shrink: 0;
+  fill: #afb1b8;
 }
+.client:hover,
 .svg-clients:hover,
+.client:hover,
 .svg-clients:focus {
   fill: #2196f3;
+  border-color: #2196f3;
 }
 /*--footer--*/
 
