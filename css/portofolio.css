@@ -56,7 +56,8 @@ a:hover {
   width: 1600px;
   height: 80px;
   top: 0px;
-  background-color: rgba(255, 255, 255, 1);
+  background: #ffffff;
+  border-bottom: 1px solid #ececec;
 }
 
 .logo-global {
@@ -79,6 +80,12 @@ a:hover {
   height: 16px;
   left: 453px;
   top: 32px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
 }
 
 .nav-second-item {
@@ -107,6 +114,21 @@ a:hover {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
+}
+.underline::after {
+  content: "";
+  position: absolute;
+  border-radius: 2px;
+  background: #2196f3;
+  height: 3px;
+  width: 0;
+  left: 0;
+  top: 45px;
+}
+.underline:hover::after {
+  width: 100%;
+  transition-duration: -250ms;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .external-link-header-mail {

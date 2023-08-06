@@ -83,6 +83,12 @@ a:hover {
   height: 16px;
   left: 453px;
   top: 32px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
 }
 
 .nav-second-item {
@@ -156,8 +162,8 @@ a:hover {
   flex-shrink: 0;
 }
 
-.envelop-icons:hover,
-.envelop-icons:focus {
+.external-link-header-mail:hover,
+.external-link-header-mail:focus {
   fill: #2196f3;
 }
 .external-link-header-phone {
@@ -174,8 +180,8 @@ a:hover {
   height: 16px;
   flex-shrink: 0;
 }
-.phone-icons:hover,
-.phone-icons:focus {
+.external-link-header-phone:hover,
+.external-link-header-phone:focus {
   stroke: #2196f3;
 }
 .phone-header {
@@ -414,9 +420,48 @@ a:hover {
   top: 1119px;
 }
 .photo-what-we-do {
+  position: relative;
   display: flex;
   gap: 30px;
 }
+.textoverlay {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  width: 370px;
+  height: 294px;
+  flex-shrink: 0;
+}
+.label {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 370px;
+  height: 70px;
+  margin: 0;
+  z-index: 1;
+  flex-shrink: 0;
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+.textoverlay::after {
+  content: "";
+  display: flex;
+  position: absolute;
+  width: 370px;
+  height: 70px;
+  flex-shrink: 0;
+  background: rgba(47, 48, 58, 0.8);
+}
+
 .second-title {
   font-family: "Roboto";
   font-style: normal;
@@ -513,13 +558,7 @@ a:hover {
   height: 44px;
   border-radius: 50%;
 }
-.elipse:hover,
-.icon-member:hover,
-.elipse:focus,
-.icon-member:focus {
-  background-color: #2196f3;
-  fill: #ffffff;
-}
+
 .icon-member {
   display: flex;
   justify-content: space-between;
@@ -528,6 +567,15 @@ a:hover {
   flex-shrink: 0;
   fill: #757575;
 }
+.elipse:hover,
+.icon-member:hover,
+.elipse:focus,
+.icon-member:focus {
+  background-color: #2196f3;
+  fill: #ffffff;
+}
+
+/* regular clients  */
 
 .regular-clients {
   display: flex;
