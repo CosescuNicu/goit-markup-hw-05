@@ -71,6 +71,11 @@ a:hover {
   line-height: 31px;
   letter-spacing: 0.03em;
 }
+.header-nav {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
 
 .nav-first-item {
   position: absolute;
@@ -108,6 +113,22 @@ a:hover {
   letter-spacing: 0.02em;
 }
 
+.underline::after {
+  content: "";
+  position: absolute;
+  border-radius: 2px;
+  background: #2196f3;
+  height: 3px;
+  width: 0;
+  left: 0;
+  top: 45px;
+}
+.underline:hover::after {
+  width: 100%;
+  transition-duration: -250ms;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .external-link-header-mail {
   position: absolute;
   display: inline-flex;
@@ -129,7 +150,6 @@ a:hover {
   letter-spacing: 0.28px;
   margin: 0;
 }
-
 .envelop-icons {
   width: 16px;
   height: 12px;
