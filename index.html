@@ -70,7 +70,9 @@
     <main>
       <section class="container hero-description">
         <h1 class="first-title">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
-        <button type="button" class="first-button">Request our service</button>
+        <button type="button" data-modal-open class="first-button">
+          Request our service
+        </button>
       </section>
 
       <!--descriere calitati echipa -->
@@ -303,7 +305,7 @@
           </div>
           <div class="client">
             <svg class="svg-clients">
-              <use href="./icons/symbol-defs.svg#client"></use>
+              <use href="./icons/symbol-defs.svg#icon-client"></use>
             </svg>
           </div>
           <div class="client">
@@ -370,5 +372,19 @@
         </div>
       </div>
     </footer>
+
+    <!-- Modal -->
+
+    <div class="modal is-hidden" data-modal>
+      <div class="modal-content">
+        <button class="close-btn is-open" data-modal-close>
+          <svg class="close-icon">
+            <use href="./icons/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+        continut modal
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

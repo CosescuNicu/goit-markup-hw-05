@@ -674,3 +674,54 @@ a:hover {
 .icon-footer:focus {
   background-color: #2196f3;
 }
+.modal {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  flex-shrink: 0;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.2); /* Black w/ opacity */
+}
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 528px;
+  height: 581px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+.is-hidden {
+  visibility: hidden;
+}
+.close-btn {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 8px;
+  flex-shrink: 0;
+  right: 8px;
+  padding: 6px 6px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0, 0, 0, 0.1);
+}
+.close-icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
