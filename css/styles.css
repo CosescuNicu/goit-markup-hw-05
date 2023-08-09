@@ -755,6 +755,9 @@ a:hover {
   transition-delay: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* --modal-- */
+
 .modal {
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -766,11 +769,14 @@ a:hover {
   flex-shrink: 0;
   margin: 0 auto;
   display: flex;
+  pointer-events: auto;
   align-items: center;
   justify-content: center;
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0, 0, 0); /* Fallback color */
-  background: rgba(0, 0, 0, 0.2); /* Black w/ opacity */
+  background: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+  opacity: 1;
+  transition: opacity 500ms linear;
 }
 .modal-content {
   position: relative;
@@ -788,8 +794,11 @@ a:hover {
 }
 .is-hidden {
   visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 250ms, opacity 1s linear;
 }
 .close-btn {
+  cursor: pointer;
   position: absolute;
   width: 30px;
   height: 30px;
@@ -798,11 +807,18 @@ a:hover {
   right: 8px;
   padding: 6px 6px;
   border-radius: 50%;
-  border: none;
-  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+.close-btn:hover {
+  fill: #2196f3;
+  background: #f5f4fa;
 }
 .close-icon {
+  align-self: center;
   width: 18px;
   height: 18px;
   flex-shrink: 0;
+  stroke-width: 1px;
+  stroke: rgba(0, 0, 0, 0.1);
 }
